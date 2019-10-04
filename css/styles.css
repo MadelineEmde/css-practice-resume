@@ -22,16 +22,20 @@ html {
   font-family: 'cashew';
   src: url(../fonts/Cashew.ttf);
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
+
 a {
   color: #ff8882;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 .content-wrap {
   /* use margin to center align block content*/
   max-width: 80%;
@@ -42,10 +46,19 @@ a:hover {
 .column-narrow {
   width: 25%;
   float: left;
-  min-height: 175;
 }
+
 .column-wide {
   width: 70%;
+  float: right;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 /* HEADER FOOTER
  --------------------- */
@@ -91,4 +104,23 @@ footer {
 
 .education {
   background: #d2e5d0;
+}
+
+h3 ~ p {
+  margin: 0;
+}
+
+.job-description {
+  margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+/* EDUCATION
+ --------------------- */
+
+p + h3 {
+  margin: 30px;
 }
