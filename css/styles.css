@@ -40,6 +40,7 @@ a:hover {
   /* use margin to center align block content*/
   max-width: 80%;
   margin: auto;
+  padding: 60px 50px;
   overflow: auto;
 }
 
@@ -60,8 +61,21 @@ h3 {
 .uppercase {
   text-transform: uppercase;
 }
+
+.button {
+  text-decoration: none;
+  background: #ff8882;
+  padding: 10px;
+  display: inline;
+  color: white;
+}
+
 /* HEADER FOOTER
  --------------------- */
+header {
+  margin-top: 50px;
+  position: relative;
+}
 header,
 footer {
   background: #928d89;
@@ -73,6 +87,21 @@ header h2 {
   margin: 0px;
 }
 
+/* nav */
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px; /* top/bottom left/right*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 /* header */
 .name {
   font-family: 'cashew', cursive;
@@ -85,6 +114,11 @@ header h2 {
   padding: 10px;
 }
 
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /* footer */
 footer {
   text-align: center;
